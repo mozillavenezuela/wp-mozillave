@@ -243,7 +243,7 @@ class Boom_Header_Image_Slider {
 	function auto_insert() {
 		if( boom_slider_get_option('autoinsert') ) : ?>
 <script>
-jQuery(function(a){function b(b){imgs="";a.each(b,function(a,b){imgs+='<img src="'+b+'" alt="" />'});return'<div class="slider-wrapper theme-default"><div class="ribbon"></div><div class="nivoSlider headerSlider">'+imgs+"</div></div>"}var c=<?php echo str_replace("\\/", "/", json_encode( boom_get_header_images() ) ) ?>,d=a('img[src="http://boom-slider-default"], img[src="http://boom-slider-uploaded"]'),e=d.parent();if(e.is("a")){e.after(b(c)).remove()}else{d.after(b(c)).remove()}var f=a("div.headerSlider");f.find("img:first").load(function(){var b=a(this).width(),c=a(this).height();f.css({width:b,height:c}).nivoSlider({<?php echo boom_nivo_slider_options() ?>})})})
+jQuery(function(a){function b(b){imgs="";a.each(b,function(a,b){imgs+='<img src="'+b+'" alt="" />'});return'<div class="slider-wrapper theme-default"><div class="ribbon"></div><div class="nivoSlider headerSlider">'+imgs+"</div></div>"}var c=<?php echo str_replace("\\/", "/", json_encode( boom_get_header_images() ) ) ?>,d=a('img[src="http://boom-slider-default"], img[src="http://boom-slider-uploaded"]'),e=d.parent();if(e.is("a")){e.after(b(c)).remove()}else{d.after(b(c)).remove()}var f=a("div.headerSlider");f.find("img:first").load(function(){var b=a(this).width(),c=a(this).height();f.css({maxWidth:b,maxHeight:c}).nivoSlider({<?php echo boom_nivo_slider_options() ?>})})})
 </script>
 		<?php endif;
 	}

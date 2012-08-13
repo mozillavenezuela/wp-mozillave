@@ -29,7 +29,7 @@ function boom_header_image( $width = null, $height = null ) {
 		$url = str_replace( 'http://', 'https://', $url );
 	else
 		$url = str_replace( 'https://', 'http://', $url );
-	$output = "<img src='". esc_url_raw( $url ) . "' width='{$width}' height='{$height}' alt='' />";
+	$output = "<img src='". esc_url_raw( $url ) . "' alt='' />";
 
 	echo $output;
 }
@@ -64,9 +64,9 @@ function boom_get_header_images() {
  */
 function boom_build_nivo_slider( $slides = array(), $width = null, $height = null ) {
 	if( $width )
-		$width = "width: {$width}px;";
+		$width = "max-width: {$width}px;";
 	if( $height )
-		$height = "height: {$height}px";
+		$height = "max-height: {$height}px";
 
 	$nivo_slides = '';
 	foreach( $slides as $slide ) {

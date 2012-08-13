@@ -22,6 +22,7 @@
 ?>
 .theme-default .nivoSlider {
 	position: relative;
+	overflow: visible !important;
 	background: #fff url(images/loading.gif) no-repeat 50% 50%;
     -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
     -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
