@@ -20,9 +20,12 @@
 	include 'nivo-slider/nivo-slider.css';
 
 ?>
+.slider-wrapper {
+	position: relative;
+}
 .theme-default .nivoSlider {
 	position: relative;
-	overflow: visible !important;
+	overflow: hidden !important;
 	background: #fff url(images/loading.gif) no-repeat 50% 50%;
     -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
     -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
@@ -42,6 +45,7 @@
 .theme-default .nivo-controlNav {
 	position: absolute;
 	left: 50%;
+	z-index: 999;
 	bottom: <?php echo boom_slider_get_option( 'bottom' ) ?>px;
 	margin-left: -<?php echo boom_count_header_images() ?>0px; /* Tweak this to center bullets */
 }
