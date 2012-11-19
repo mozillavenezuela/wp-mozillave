@@ -635,7 +635,7 @@ nav#subnav ul.menu li.menu-item ul.sub-menu li.menu-item a {
 #content .single-entry-header h1.entry-title {
 	margin: 0 0 5px;
 	font: bold 1.3em/1.4 'Open Sans Light', arial, sans-serif;
-	color: #009BC2;
+	color: #8E2424;
 }
 #content .single-entry-header p {
 	padding: 0 0 5px;
@@ -809,8 +809,10 @@ a#cancel-comment-reply-link {
 	font-weight: normal;
 }
 #content #comments #respond h3#reply-title {
-	margin:0 0 3px 0;
-	font-size: 1.2em;
+    font: 1.5em/1 "Open Sans Light","Lucida Sans","Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+    letter-spacing: -1px;
+    margin: 0 0 0.25em;
+    top: 0;
 }
 form#commentform p.comment-notes, p.logged-in-as {
 	padding:0 0 15px 0;
@@ -824,18 +826,18 @@ form#commentform p.comment-form-author, form#commentform p.comment-form-email, f
 }
 input#submit, input.wpcf7-submit {
 	margin: 10px 0 0;
-	padding: 8px 10px 7px;
-	display: inline-block;
-	vertical-align: baseline;
-	outline: none;
-	background-color: #777;
-	border: none;
-	font-size: .75em;
-	color: #fff;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	cursor: pointer;
+    background-color: #276195;
+    background-image: linear-gradient(#3C88CC, #276195);
+    border: 0 none;
+    border-radius: 0.25em 0.25em 0.25em 0.25em;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1), 0 -2px 0 0 rgba(0, 0, 0, 0.2) inset;
+    color: #FFFFFF;
+    cursor: pointer;
+    font: 0.857em/1.1 "Open Sans Light","Lucida Sans","Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+    padding: 8px 24px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    transition: all 0.25s linear 0s;
 }
 input#submit:hover, input.wpcf7-submit:hover {
 	background-color: #009BC2;
@@ -844,19 +846,24 @@ input#submit:hover, input.wpcf7-submit:hover {
 form#commentform input#author, form#commentform input#email, form#commentform input#url {
 	width: 60%;
 	margin: 5px 0 0;
-	padding: 9px 5px 9px;
 	display: block;
-	background-color:#fff;
-	border: 1px solid #ddd;
-	font-size:1em;
+    background-color:#fff;
+    border: 1px solid #DBDBDB;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1);
+    font-size: 0.857em;
+    padding: 6px 10px;
+    transition: all 0.1s linear 0s;
+	
 }
 form#commentform textarea#comment {
 	width:95%;
 	margin: 5px 0 0;
-	padding: 9px 5px;
 	background-color:#fff;
-	border: 1px solid #ddd;
-	font: 1em 'Droid Sans', arial, sans-serif;
+    border: 1px solid #DBDBDB;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.1);
+    font-size: 0.857em;
+    padding: 6px 10px;
+    transition: all 0.1s linear 0s;
 }
 form#commentform p.subscribe-to-doi-comments {
 	padding: 20px 0 0;
